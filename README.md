@@ -34,7 +34,7 @@ Source: [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fed
 
 - Handled **missing values** in the `bmi` column by using median imputation.
 - Ensured **data types** are appropriate for analysis.
-- Standardized categorical variables if necessary.
+- Standardize categorical variables if necessary.
 - Removed any potential data leakage or anomalies.
 
 ---
@@ -46,6 +46,14 @@ Some visualizations include:
 - Age, glucose level, and BMI distributions.
 - Stroke distribution across gender, smoking status, work type, etc.
 - Correlation heatmap & scatter plots for pattern discovery.
+
+---
+
+### 📌 Model Evaluation Summary
+
+- Several classification models were tested to predict stroke events based on risk factors such as age, hypertension, history of heart disease, glucose levels, BMI, and smoking habits.
+- **Logistic Regression** and **Gradient Boosting** performed the best, with AUCs of **0.81** and **0.80**, respectively, indicating a high ability to distinguish stroke and non-stroke patients.
+- **Support Vector Machine (SVM)** performed the lowest (AUC = 0.56), most likely due to poor fit to the data distribution or lack of feature adjustment.
 
 ---
 
